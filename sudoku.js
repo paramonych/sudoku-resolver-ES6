@@ -72,10 +72,6 @@ function deconstructSudoku(toDeconstruct) {
     return [rowsSums, colsSums, cellsSums]
 }
 
-function pushMapElement(hashMap, element) {
-    hashMap[`_${element}`] = element
-}
-
 function transposeMatrix(m) {
     return m[0].map((_,colIndex) => m.map(row => row[colIndex]))
 }
